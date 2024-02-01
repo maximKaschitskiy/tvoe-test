@@ -10,4 +10,4 @@ Link to Figma: https://www.figma.com/file/BlUOqZFhrfhNwhAH7V1U5T/%D0%A2%D0%B5%D1
 
 ## Technologies
 
-Next, sass, moment, uuid
+Next.JS, Typesctrript, sass, moment, uuid
