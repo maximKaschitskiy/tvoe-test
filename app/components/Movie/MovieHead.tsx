@@ -47,7 +47,7 @@ const MovieHead = () => {
                     src={movieObj.cover}
                     alt={movieObj.title}
                     className={styles.bg}
-                    fill={false}
+                    width={1250}
                 />
             </div>
             <div className={styles.content}>

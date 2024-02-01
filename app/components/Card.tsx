@@ -12,6 +12,18 @@ const Card = (
         title: boolean
     }) => {
 
+    
+    const demetions = {
+        large: {
+            width: 398,
+            heigth: 597
+        },
+        small: {
+            width: 255,
+            height: 382
+        }
+    }
+
     return (
         <figure className={`${styles.wrapper} ${styles[`wrapper_${size}`]}`}>
             <div className={`${styles.coverWrapper} ${styles[`coverWrapper_${size}`]} ${active ? styles.coverWrapper_active : null}`}>
@@ -22,7 +34,7 @@ const Card = (
                     src={item.cover}
                     alt={item.title}
                     className={styles.cover}
-                    fill={true}
+                    width={demetions[`${size}`].width}
                 />
             </div>
             <figcaption className={`${title ? styles.title : styles.title_hide}`}>

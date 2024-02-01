@@ -16,7 +16,7 @@ const EpisodeCard = (
                 src={item.cover}
                 alt={item.title}
                 className={styles.cover}
-                fill={false}
+                width={544}
             />
             <h6 className={`${styles.title}`}>
                 {('title' in item) ? item.title : null}

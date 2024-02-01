@@ -19,7 +19,7 @@ const Promo = () => {
                     src={promoObj.cover}
                     alt={promoObj.title}
                     className={styles.bg}
-                    fill={false}
+                    width={1400}
                 />
             </div>
             <div className={styles.content}>
