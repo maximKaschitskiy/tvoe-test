@@ -13,8 +13,8 @@ export default function RootLayout({
   return (
     <html lang="ru" style={{
       // @ts-ignore
-      '--font-inter': inter,
-      '--font-archivo': archivo
+      '--font-inter': inter.style.fontFamily,
+      '--font-archivo': archivo.style.fontFamily
     }}>
       <body>{children}</body>
     </html>
