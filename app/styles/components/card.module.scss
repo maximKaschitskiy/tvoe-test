@@ -98,12 +98,10 @@
     @include spacing-sticker-lg;
     @include text-article-main;
     margin: 28px;
-    display: flex;
 }
 
 .sticker_small {
     @include spacing-sticker-sm;
     @include text-sticker-sm;
     margin: 12px;
-    display: flex;
 }

@@ -48,6 +48,7 @@
   object-fit: contain;
   box-sizing: border-box;
   object-position: 0 -75px;
+  width: 95%;
 }
 
 .bgWrapper {
@@ -56,6 +57,9 @@
   top: 0;
   height: max-content;
   width: max-content;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 
 .bgWrapper::after {
@@ -111,12 +115,12 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: 16px;
   margin-top: 112px;
 }
 
 .control {
-  @include spacing-button;
+  @include spacing-button-sm;
   @include text-button;
   color: $white;
   display: flex;

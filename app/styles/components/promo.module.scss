@@ -46,7 +46,7 @@
   z-index: 1;
   object-fit: contain;
   box-sizing: border-box;
-  object-position: 150px 0;
+  object-position: 140px -10px;
 }
 
 .bgWrapper {
@@ -55,6 +55,9 @@
   top: 0;
   height: max-content;
   width: max-content;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 
 .bgWrapper::after {

@@ -69,15 +69,30 @@ $border: 4px;
 
 @mixin spacing-button {
     border-radius: 16px;
+    padding: 29.5px 51.5px;
+}
+
+@mixin spacing-button-sm {
+    border-radius: 16px;
     padding: 24px 32px;
 }
 
 @mixin spacing-sticker-lg {
     border-radius: 12px;
-    padding: 14px 22px;
+    padding: 6px 18.5px;
+    width: 38px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @mixin spacing-sticker-sm {
     border-radius: 8px;
     padding: 12px;
+    width: 35px;
+    height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -29,7 +29,7 @@ const MovieHead = () => {
         cover: bg,
         info: {
             rating: '10',
-            dates: '2022-...',
+            dates: '2022 - ...',
             season: '1 сезон',
             county: 'США',
             genre: 'Ужасы',
@@ -68,7 +68,7 @@ const MovieHead = () => {
                         Смотреть
                     </button>
                     <button className={`${styles.control} ${styles.control_tint}`}>
-                        О фильме
+                        Трейлер
                     </button>
                     <button className={`${styles.control} ${styles.control_tint}`}>
                         <Image

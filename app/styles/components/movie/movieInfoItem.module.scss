@@ -26,4 +26,7 @@
   backdrop-filter: blur(10px);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.13) 50%, rgba(255, 255, 255, 0.10) 100%);
   @include spacing-sticker-sm;
+  @include text-sticker-sm;
+  width: 100%;
+  justify-content: flex-start;
 }
