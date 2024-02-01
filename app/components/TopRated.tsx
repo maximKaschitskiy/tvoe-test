@@ -1,6 +1,6 @@
 import { v4 as ID } from "uuid";
 import { StaticImageData } from "next/image";
-import { archivo } from "../layout";
+import { archivo } from '../fonts';
 import Cards from "./Cards";
 import Card from './Card';
 import styles from '../styles/components/toprated.module.scss';
