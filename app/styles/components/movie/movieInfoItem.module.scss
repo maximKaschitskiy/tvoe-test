@@ -1,0 +1,29 @@
+@import '../../variables.scss';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: max-content;
+}
+
+.value {
+  @include text-caption-main;
+  color: $white;
+  margin: 0;
+}
+
+.title {
+  @include text-caption-main;
+  color: $dark;
+  margin: 0;
+}
+
+.value_tinted {
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.13) 50%, rgba(255, 255, 255, 0.10) 100%);
+  @include spacing-sticker-sm;
+}

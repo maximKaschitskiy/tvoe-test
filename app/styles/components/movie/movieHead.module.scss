@@ -1,0 +1,171 @@
+@import '../../variables.scss';
+
+.wrapper {
+  width: 100%;
+  height: max-content;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  overflow-y: hidden;
+  padding-left: 215px;
+}
+
+.wrapper::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  background: linear-gradient(270deg, #09090C 0%, rgba(0, 0, 0, 0.00) 25%);
+  background-position: left 0 top 0;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.wrapper::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, #09090C 0%, rgba(0, 0, 0, 0.00) 25%);
+  background-position: left 0 top 0;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.bg {
+  z-index: 1;
+  object-fit: contain;
+  box-sizing: border-box;
+  object-position: 0 -75px;
+}
+
+.bgWrapper {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: max-content;
+  width: max-content;
+}
+
+.bgWrapper::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  background: linear-gradient(-270deg, #09090C 25%, rgba(0, 0, 0, 0.00) 50%);
+  background-position: left 0 top 0;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.bgWrapper::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  background: linear-gradient(360deg, #09090C 20%, rgba(0, 0, 0, 0.00) 50%);
+  background-position: left 0 top 0;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.content {
+  width: 735px;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  z-index: 3;
+  padding-top: 90px;
+  padding-bottom: 184px;
+}
+
+.logo {
+  width: 367px;
+  height: auto;
+  display: flex;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 112px;
+}
+
+.control {
+  @include spacing-button;
+  @include text-button;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  outline: 0;
+}
+
+.control_colored {
+  background: $colored;
+}
+
+.control_tint {
+  @include bg-tint;
+}
+
+.controlIcon {
+  width: 32px;
+  height: 32px;
+}
+
+.tagline {
+  @include text-article-main;
+  color: $white;
+  text-align: left;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.brief {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.briefItem {
+  @include text-caption-main;
+  color: $white;
+}
+
+.briefItem_highlighted {
+  @include spacing-sticker-lg;
+  @include text-article-main;
+  background: rgba(255, 255, 255, 0.20);
+}

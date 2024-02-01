@@ -1,0 +1,47 @@
+@import '../../variables.scss';
+
+.wrapper {
+    width: 100%;
+    height: max-content;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    gap: 24px;
+    padding-left: 215px;
+    padding-right: 64px;
+}
+
+.attention {
+    height: 48px;
+    width: auto;
+}
+
+.title {
+    @include text-title;
+    color: $white;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.article {
+    @include text-article-secondary;
+    color: $white;
+    margin: 0;
+}
+
+.noticeWrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+}
+
+.notice {
+    @include text-caption-main;
+    color: $dark;
+    margin: 0;
+}

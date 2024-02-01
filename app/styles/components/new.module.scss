@@ -1,0 +1,18 @@
+@import '../variables.scss';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  gap: 24px;
+  margin-top: 71px;
+  width: 100%;
+  z-index: 4;
+  padding-left: 215px;
+}
+
+.title {
+  @include text-title;
+  color: $white;
+  margin: 0;
+}

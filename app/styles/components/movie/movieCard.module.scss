@@ -1,0 +1,39 @@
+@import '../../variables.scss';
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 542px;
+    height: max-content;
+}
+
+.cover {
+    border-radius: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 306px;
+    object-fit: cover;
+}
+
+.title {
+    @include text-article-main;
+    color: $white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    margin-right: auto;
+    width: 100%;
+    word-wrap: nowrap;
+    white-space: nowrap;
+    margin-top: 28px;
+}
+
+.duration {
+    @include text-caption-secondary;
+    color: $tint;
+    margin: 0;
+    width: 100%;
+}
