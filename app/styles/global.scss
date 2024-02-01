@@ -1,7 +1,7 @@
 @import './variables.scss';
 
 :root {
-    font-family: TTNormsPro, Inter, Archivo, system-ui, Helvetica, Arial, sans-serif;
+    font-family: TTNormsPro, var(--font-inter), var(--font-archivo), Inter, Archivo, system-ui, Helvetica, Arial, sans-serif;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;

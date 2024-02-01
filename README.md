@@ -10,4 +10,18 @@ Link to Figma: https://www.figma.com/file/BlUOqZFhrfhNwhAH7V1U5T/%D0%A2%D0%B5%D1
 
 ## Technologies
 
-Next.JS, Typesctrript, sass, moment, uuid
+Next, Typescript, sass, moment, uuid
+
+### Routing
+There are next pages available:
+'/' - index page
+'/movie/1' - item description
+
+### Deployed build
+[Click here](https://tvoe-test-eight.vercel.app/)
+
+### How to run
+
+    npm run i
+    npm run build
+    npm run start

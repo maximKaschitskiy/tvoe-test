@@ -1,6 +1,5 @@
 import { v4 as ID } from "uuid";
 import { StaticImageData } from "next/image";
-import { archivo } from '../fonts';
 import Cards from "./Cards";
 import Card from './Card';
 import styles from '../styles/components/toprated.module.scss';
@@ -48,7 +47,7 @@ const TopRated = () => {
                         className={styles.cardWrapper}
                         key={ID()}
                     >
-                        <p className={`${archivo.className} ${styles.cardPosition}`}>{item.position}</p>
+                        <p className={`${styles.cardPosition}`}>{item.position}</p>
                         <Card
                             item={item}
                             size='large'
